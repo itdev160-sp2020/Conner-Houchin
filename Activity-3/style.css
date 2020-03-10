@@ -11,6 +11,10 @@ main {
     background-origin: border-box;
     padding: 2em 3em; 
 }
+main img{
+    float: right;
+}
+
 #overView {
     font-size: 1.4em;
 }
