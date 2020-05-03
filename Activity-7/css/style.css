@@ -1,0 +1,25 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin:auto 30px;
+    color: burlywood;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    padding: 5px;
+}
+
+#listContainer {
+    margin-top: 20px;
+}
+
+#completeTasks {
+    list-style-type: none;
+}
+
+#completeTasks li {
+    text-decoration: line-through;
+}
