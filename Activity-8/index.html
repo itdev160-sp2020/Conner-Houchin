@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Activity 8</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <header>
+        <h1 class="headerTitle">My blog</h1>  
+        <div class="headerMenu">
+            <button id="newButton">New</button>
+        </div>
+    </header>
+    <main>
+        <section id="displayContent"></section>
+    </main>
+    <footer>
+        Footer text here
+    </footer>
+
+
+
+
+
+    <div class="modal" id="modalDialog">
+        <section>
+            <h2>Title</h2>
+            <input type="text" id="editTitleText">
+            <span id="editTitleMessage"></span>
+        </section>
+        <section>
+            <h2>Content</h2>
+            <textarea id="editContentText" cols="8" rows="80"></textarea>
+            <span id="editContentMessage"></span>
+        </section>
+        <footer>
+            <button type="button" id="cancelButton">Cancel</button>
+            <button type="button" id="saveButton">Save</button>
+        </footer>
+    </div>
+    <div id="modalBackdrop"></div>
+    <script src="js/scripts.js" charset="utf-8"></script>
+    
+</body>
+</html>
