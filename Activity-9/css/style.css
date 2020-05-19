@@ -1,0 +1,38 @@
+header{
+    text-align: center;
+    background-color: black;
+    font-family: sans-serif;
+    margin: 0;
+    color: white;
+}
+main{
+    margin: 0;
+}
+aside{
+    width: 20%;
+    float: left;
+    background-color: black;
+    height: 10000px;
+}
+.selection{
+    color: white;
+    width: 100%;
+}
+
+.selection:hover{
+    background-color: darkgrey;
+}
+
+.selection.selected{
+    background-color: darkgrey;
+}
+
+.quoteBox{
+    display: none;
+    width: 80%;
+    float: right;
+}
+
+.quoteBox.visible{
+    display: block;
+}

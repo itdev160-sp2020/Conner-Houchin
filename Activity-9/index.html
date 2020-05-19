@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Activity 8</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <header>
+        <h1 class="headerTitle">FAMOUS QUOTES</h1>
+    </header>
+
+    <aside>
+        <ul>
+            <li><a href="javascript:void(0);" class="selection" class="selected" onclick="displayQuote('quoteOne', 'time')" id="time">TIME</a></li><br>
+            <li><a href="javascript:void(0);" class="selection" onclick="displayQuote('quoteTwo', 'war')" id="war">WAR</a></li><br>
+            <li><a href="javascript:void(0);" class="selection" onclick="displayQuote('quoteThree', 'love')" id="love">LOVE</a></li><br>
+            <li><a href="javascript:void(0);" class="selection" onclick="displayQuote('quoteFour', 'death')" id="death">DEATH</a></li><br>
+            <li><a href="javascript:void(0);" class="selection" onclick="displayQuote('quoteFive', 'peace')" id="peace">PEACE</a></li><br>
+        </ul>
+
+    </aside>
+
+    <main>
+        <section class="quoteBox" class="visible" id="quoteOne">
+            <h1>Time</h1>
+            <p>
+                <i>"The two most powerful warriors are patience and time."</i> 
+            </p>
+            <h3>– Leo Tolstoy</h3>
+        </section>
+
+        <section class="quoteBox" id="quoteTwo">
+            <h1>War</h1>
+            <p>
+                <i>“God created war so that Americans would learn geography.”</i>
+            </p>
+            <h3>― Mark Twain</h3>
+        </section>
+
+        <section class="quoteBox" id="quoteThree">
+            <h1>Love</h1>
+            <p>
+                <i>"Life without love is like a tree without blossoms or fruit."</i>
+            </p>
+            <h3>-Khalil Gibran</h3>
+        </section>
+
+        <section class="quoteBox" id="quoteFour">
+            <h1>Death</h1>
+            <p>
+                <i>"Death is not the opposite of life, but a part of it."</i>
+            </p>
+            <h3>-Haruki Murakami</h3>
+
+        </section>
+
+        <section class="quoteBox" id="quoteFive">
+            <h1>Peace</h1>
+            <p>
+                <i>“Peace is liberty in tranquility.”</i>
+            </p>
+            <h3>—Marcus Tullius Cicero</h3>
+        </section>
+
+
+
+
+        <script>
+            var currentQuoteEL = document.getElementById('quoteOne');
+            var selectedEL = document.getElementById('time');
+
+            function displayQuote(quote, selected)
+            {
+                currentQuoteEL.classList.remove('visible');
+                currentQuoteEL = document.getElementById(quote);
+                currentQuoteEL.classList.add('visible');
+                selectedEL.classList.remove('selected');
+                selectedEL = document.getElementById(selected);
+                selectedEL.classList.add('selected');
+            }
+
+
+        </script>
+    </main>
+    
+</body>
+</html>
